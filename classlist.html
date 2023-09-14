@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>classlist</title>
+  <style>
+    .styleSet1{
+      color: red;
+      font-size: 20px;
+
+    }
+  </style>
+</head>
+<body>
+  <p id="text">text</p>
+  <script>
+    const pE1 = document.querySelector('#text');
+    pE1.classList.add('styleSet1'); // add를 통해 새로운 클래스를 만듬
+    pE1.classList.remove('styleSet1'); // 
+    //만들어 놓은 클래스속성이 존재했던 속성값을 삭제
+    pE1.classList.toggle('styleSet1');
+  </script>
+</body>
+</html>

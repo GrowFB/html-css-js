@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>data 속성</title>
+</head>
+<body>
+  <button data-cnt="10">가방 구매</button>
+  <button data-cnt="0"> 신발 구매</button>
+  <script>
+    const button = document.querySelectorAll('button');
+    button.forEach((el)=>{
+      //console.log(el.dataset.cnt);
+     el.dataset.cnt = 30;
+     //dataset 뒤에는 설정한 이름이 들어가야함
+     
+    })
+  </script>
+  
+</body>
+</html>

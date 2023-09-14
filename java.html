@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>자바 스크립트</title>
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>문서 모델 사용하기 </title>
+  </head>
+  <body>
+    <h1>h1</h1>
+    <a href="#">a</a>
     
-</body>
+  </body>
 </html>
+
+
+<!-- 
+  HTML문서는 dom트리 형태를 가짐 - 아래로 가지치는 형태
+  노드의 종류
+1. 문서 노드 2. 요소 노드 3. 속성 노드 4.텍스트 노드  5. 주석 노드
+html , head등과 같은 것은 요소노드 href charset 등은 속성 노드 
+-->
+
+<!-- 노드 선택하기 
+
+-->
+<!-- css선택자와  qurry메서드
+  매개변수로 넘어오는 css 선택자에 해당하는 노드를 선택하는 방법
+querySelector
+querySelectorALL
+ex) document.queryselector("h1")
+ex) document.queryselector(".sample") - class 선택자 일때
+-->

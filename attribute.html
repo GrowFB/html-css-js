@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>attribute</title>
+</head>
+<body>
+  <a href="https://naver.com">네이버</a>
+  <script>
+    const aE1 = document.querySelector('a');
+     console.log(aE1.getAttribute("href"));
+     //속성의 값을 가져올떄는 get
+     aE1.setAttribute("href", "https:/google.com");
+     aE1.setAttribute("target", "_blank");
+     //할당 하고 싶을 때는 set
+     aE1.removeAttribute("target");
+     // 할당한거 삭제 
+
+     //클래스 리스트로 조작하는 것과 어트리뷰트로 조작하는 것의 차이점?
+     //어트리뷰트는 아예 새로운 갑을 재할당 기존것을 보존해 주지 않음
+  </script>
+  
+</body>
+</html>

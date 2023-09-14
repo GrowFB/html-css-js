@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>컨텐츠 조작</title>
+</head>
+<body>
+  <p class="title">hello, <span style="display: none">javascript!</span></p>
+  <script>
+    const pE1 = document.querySelector('p')
+    console.log(pE1.textContent); 
+    // textcontent는 안보이는 텍스트 노드까지 가져와서 보여줌
+    console.log(pE1.innerText);
+    // innertext는 우리눈에만 보이는 노드를 보여줌
+    console.log(pE1.innerHTML);
+    //컨텐츠의 태그까지 모드다 인식하여 가져옴 - 태그가 문자열로 인식
+
+    pE1.textContent = 'hello, new content!';
+
+    document.querySelector
+  </script>
+</body>
+</html>

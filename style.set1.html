@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style</title>
+</head>
+<body>
+  <p id="text">text</p>
+  <script>
+    //backgound- color 와 같이 - 기호가 들어있는 것 조심을 해야함
+    //why? 자바스크립트가 연사자로 인식 그렇기 때문에 그 차이를 표현하기 위해
+    //backgrounColor 처럼 대문자로 표시
+    const pE1 = document.querySelector('#text'); // 내가원하는 노드가 제대로 가져와졌는지 꼭 확인하기
+    pE1.style.color = '#00ff00';
+    pE1.style.fontSize = '30px';
+    
+  </script>
+  
+</body>
+</html>
