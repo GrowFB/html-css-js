@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 객체와  this</title>
+</head>
+<body>
+  <button>클릭</button>
+  <input type="text">
+  <p>text - 1</p>
+  <p> text - 2</p>
+  <p> text - 3</p>
+  <script>
+    const btnel = document.querySelector('button');
+    btnel.addEventListener('click', (e//매개변수
+    )=>{
+      console.log('click event');
+      console.log(e);
+      
+    })
+//관련된 객체의 주요속성을 파악해서 이를 활용할 수 있음 
+    const inputel = document.querySelector('input');
+    inputel.addEventListener('keydown', (e)=>{
+      console.log(e);
+      if(e.keyCode === 13){
+        searchGo();
+      }
+    })
+
+    function searchGo(){
+      alert('검색시작');
+    }
+
+    const pel = document.querySelectorAll('p');
+    pel.forEach((el) => {
+    el.addEventListener('click', function(){
+      console.log(this);
+      if(this.style.color === 'red'){
+        this.style.color = 'black';
+      }else{
+        this.style.color = 'red';
+      }
+    })
+  })
+
+  //화살표 함수 일때는 this 불가능
+  </script>
+</body>
+</html>

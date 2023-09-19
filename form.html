@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>forms</title>
+</head>
+<body>
+   <!-- 도큐먼트 객체는 최상위 객체 이걸 조작함으로써 웹페이지의 내용을 제어가 가능
+    그중에서도 form은 조작 방법이 조금 다름 -->
+   <!-- <form name="fm1"> 
+    <input type="text">
+  </form>
+  <form name="fm2">
+    <input type="text">
+  </form>
+  <form name="fm3">
+    <input type="text">
+  </form>
+  <script>
+    const formels = document.fm1; // forms롤 사용하고 모든 form요소를 찾아낼 수 있음
+                                // 혹은 name 속성을 활용하여 내가 제어하고 싶은 곳에 접근 가능
+    comsole.log(formels)
+  </script>
+-->
+
+  <form name="frm1">
+    <label for="uname">이름</label>
+    <input type="text" id="uname" name="uname" value="하스">
+    <label for="age">나이</label>
+    <input type="text" id="age" name="age">
+    <label for="gender">성별</label>
+    <input type="password" id="password" name="password">
+    <label for="gender">비밀번호</label>
+    <select name="gender" id="gender">
+      <option value="male">male</option>
+      <option value="formel">female</option>
+    </select>
+    <button type="submit">전송</button>
+  </form>
+  <script>
+    const frmel = document.frm1;
+    console.log(frmel.elements.uname.value) // 혹은 console.log(frm1.elements.age)
+  </script>
+</body>
+</html>
